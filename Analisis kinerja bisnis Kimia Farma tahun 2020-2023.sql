@@ -29,11 +29,11 @@ SELECT
     END AS nett_profit, 
     t.rating AS rating_transaksi 
 FROM 
-    kf_final_transaction.kf_final_transaction t 
+    kimia_farma.kf_final_transaction t 
 INNER JOIN 
-    kf_kantor_cabang.kf_kantor_cabang b ON t.branch_id = b.branch_id 
+    kimia_farma.kf_kantor_cabang b ON t.branch_id = b.branch_id 
 INNER JOIN 
-    kf_product.kf_product p ON t.product_id = p.product_id;
+    kimia_farma.kf_product p ON t.product_id = p.product_id;
 
 
 --1.**SELECT:** Bagian kueri ini menentukan kolom dan bidang kalkulasi yang ingin diambil dari database. Klausa ini mencantumkan semua kolom yang akan disertakan dalam kumpulan hasil.
